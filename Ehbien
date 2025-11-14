@@ -1,0 +1,286 @@
+proxy-groups:
+  - name: 𝐏𝐑𝐎𝐗𝐘
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
+    type: select
+    proxies:
+      - 𝐀𝐮𝐭𝐨
+      - 𝐒𝐞𝐥𝐞𝐜𝐭
+      - 𝐅𝐚𝐥𝐥𝐛𝐚𝐜𝐤
+      - 𝐑𝐨𝐮𝐧𝐝𝐑𝐨𝐛𝐢𝐧
+  - name: 𝐀𝐮𝐭𝐨
+    icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Auto.png
+    type: url-test
+    interval: 300
+    tolerance: 50
+    include-all: true
+  - name: 𝐒𝐞𝐥𝐞𝐜𝐭
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
+    type: select
+    include-all: true
+  - name: 𝐅𝐚𝐥𝐥𝐛𝐚𝐜𝐤
+    icon: https://raw.githubusercontent.com/Orz-3/mini/refs/heads/master/Color/Available.png
+    type: fallback
+    interval: 300
+    tolerance: 50
+    include-all: true
+  - name: 𝐑𝐨𝐮𝐧𝐝𝐑𝐨𝐛𝐢𝐧
+    icon: https://raw.githubusercontent.com/Orz-3/mini/refs/heads/master/Color/Roundrobin.png
+    type: load-balance
+    interval: 300
+    tolerance: 50
+    include-all: true
+    strategy: sticky-sessions
+  - name: 𝐁𝐢𝐥𝐢𝐁𝐢𝐥𝐢
+    icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/bilibili.png
+    type: select
+    proxies:
+      - DIRECT
+      - 𝐇𝐊
+      - 𝐓𝐖
+  - name: 𝐁𝐚𝐡𝐚𝐦𝐮𝐭
+    icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Bahamut.png
+    type: select
+    proxies:
+      - 𝐇𝐊
+      - 𝐓𝐖
+  - name: 𝐓𝐰𝐢𝐭𝐜𝐡
+    icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Twitch.png
+    type: select
+    proxies:
+      - 𝐏𝐑𝐎𝐗𝐘
+      - 𝐇𝐊
+      - 𝐓𝐖
+      - 𝐒𝐆
+      - 𝐉𝐏
+      - 𝐔𝐒
+  - name: 𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+    icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/YouTube.png
+    type: select
+    proxies:
+      - 𝐏𝐑𝐎𝐗𝐘
+      - 𝐇𝐊
+      - 𝐓𝐖
+      - 𝐒𝐆
+      - 𝐉𝐏
+      - 𝐔𝐒
+  - name: 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+    type: select
+    proxies:
+      - 𝐏𝐑𝐎𝐗𝐘
+      - 𝐇𝐊
+      - 𝐓𝐖
+      - 𝐒𝐆
+      - 𝐉𝐏
+      - 𝐔𝐒
+  - name: 𝐆𝐀𝐌𝐄
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/GAME.png
+    type: select
+    proxies:
+      - DIRECT
+      - 𝐇𝐊
+      - 𝐓𝐖
+      - 𝐒𝐆
+      - 𝐉𝐏
+      - 𝐔𝐒
+  - name: 𝐆𝐢𝐭𝐡𝐮𝐛
+    icon: https://raw.githubusercontent.com/Orz-3/mini/refs/heads/master/Color/github.png
+    type: select
+    proxies:
+      - 𝐏𝐑𝐎𝐗𝐘
+  - name: 𝐆𝐨𝐨𝐠𝐥𝐞
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
+    type: select
+    proxies:
+      - 𝐏𝐑𝐎𝐗𝐘
+      - 𝐇𝐊
+      - 𝐓𝐖
+      - 𝐒𝐆
+      - 𝐉𝐏
+      - 𝐔𝐒
+  - name: 𝐀𝐝𝐁𝐥𝐨𝐜𝐤
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 𝐅𝐢𝐧𝐚𝐥
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
+    type: select
+    proxies:
+      - DIRECT
+      - 𝐏𝐑𝐎𝐗𝐘
+      - 𝐇𝐊
+      - 𝐓𝐖
+      - 𝐒𝐆
+      - 𝐉𝐏
+      - 𝐔𝐒
+  - name: 𝐇𝐊
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+    type: url-test
+    interval: 300
+    tolerance: 50
+    include-all: true
+    filter: "(?i)香港|Hong Kong|HK|🇭🇰"
+  - name: 𝐓𝐖
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+    type: url-test
+    interval: 300
+    tolerance: 50
+    include-all: true
+    filter: "(?i)台湾|Taiwan|TW|🇹🇼"
+  - name: 𝐒𝐆
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+    type: url-test
+    interval: 300
+    tolerance: 50
+    include-all: true
+    filter: "(?i)新加坡|狮城|Singapore|SG|🇸🇬"
+  - name: 𝐉𝐏
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+    type: url-test
+    interval: 300
+    tolerance: 50
+    include-all: true
+    filter: "(?i)日本|Japan|JP|🇯🇵"
+  - name: 𝐔𝐒
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+    type: url-test
+    interval: 300
+    tolerance: 50
+    include-all: true
+    filter: "(?i)美国|USA|US|🇺🇸"
+  - name: GLOBAL
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+    type: select
+    proxies:
+      - DIRECT
+      - 𝐏𝐑𝐎𝐗𝐘
+      - 𝐀𝐮𝐭𝐨
+      - 𝐒𝐞𝐥𝐞𝐜𝐭
+      - 𝐇𝐊
+      - 𝐓𝐖
+      - 𝐒𝐆
+      - 𝐉𝐏
+      - 𝐔𝐒
+    include-all: true
+
+    
+rule-providers:
+  Ehbien:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/1653379593/Surge/refs/heads/Sparkle/Rouler.yaml
+    path: ./ruleset/Rouler.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  BiliBili:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml
+    path: ./ruleset/BiliBili.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  Bahamut:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml
+    path: ./ruleset/Bahamut.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  Twitch:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml
+    path: ./ruleset/Twitch.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  YouTube:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    path: ./ruleset/YouTube.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  Telegram:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+    path: ./ruleset/Telegram.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  Discord:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml
+    path: ./ruleset/Discord.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  Game:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
+    path: ./ruleset/Game.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  Github:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
+    path: ./ruleset/GitHub.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  Google:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+    path: ./ruleset/Google.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  Download:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
+    path: ./ruleset/Download.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  Lan:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
+    path: ./ruleset/Lan.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  AdBlock:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt
+    path: ./ruleset/anti-ad-clash.txt
+    behavior: domain
+    interval: 86400
+    format: text
+    type: http
+  ChinaIP:
+    url: https://proxy.api.030101.xyz/https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/clash-rule-provider.yml
+    path: ./ruleset/ChinaIP.yaml
+    behavior: ipcidr
+    interval: 86400
+    format: yaml
+    type: http
+
+    
+rules:
+  - RULE-SET,Lan,DIRECT
+  - RULE-SET,AdBlock,𝐀𝐝𝐁𝐥𝐨𝐜𝐤
+  - RULE-SET,BiliBili,𝐁𝐢𝐥𝐢𝐁𝐢𝐥𝐢
+  - RULE-SET,Bahamut,𝐁𝐚𝐡𝐚𝐦𝐮𝐭
+  - RULE-SET,Discord,𝐏𝐑𝐎𝐗𝐘
+  - RULE-SET,Ehbien,𝐏𝐑𝐎𝐗𝐘
+  - RULE-SET,Twitch,𝐓𝐰𝐢𝐭𝐜𝐡
+  - RULE-SET,YouTube,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+  - RULE-SET,Telegram,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+  - RULE-SET,Game,𝐆𝐀𝐌𝐄
+  - RULE-SET,Github,𝐆𝐢𝐭𝐡𝐮𝐛
+  - RULE-SET,Google,𝐆𝐨𝐨𝐠𝐥𝐞
+  - RULE-SET,ChinaIP,DIRECT
+  - RULE-SET,Download,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,𝐅𝐢𝐧𝐚𝐥
